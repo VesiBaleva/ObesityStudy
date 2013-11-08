@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="ObesityStudyWin8.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ObesityStudyWin8"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" DataContext="{Binding Main, Source={StaticResource Locator}}">
+    
+
+    <Grid>
+    	<Grid.Background>
+    		<ImageBrush ImageSource="ms-appx:///Assets/background.png"/>
+    	</Grid.Background>
+        
+        <StackPanel>
+            <!--<Button x:Name="signInBtn"  Click="SignInClick"  Content="Sign in"  Margin="0,20,0,-38" Visibility="Collapsed"/>
+            <Button x:Name="signOutBtn" Click="SignOutClick" Content="Sign out" Margin="0,20,0,-38" Visibility="Collapsed"/>-->
+        </StackPanel>
+        <Grid Height="400" VerticalAlignment="Center" Width="598" Margin="0" Background="{StaticResource CheckBoxDisabledForegroundThemeBrush}">
+        	<Button Content="Enter" Command="{Binding NavigateCommand}" CommandParameter="Login" Margin="0,150,0,0" HorizontalAlignment="Center" FontSize="34.667"/>
+        	<TextBlock Text="Obesity Study"
+        		HorizontalAlignment="Center"
+        		VerticalAlignment="Center"
+        		Style="{StaticResource PageHeaderTextStyle}" Margin="0,0,0,200" FontSize="80" FontWeight="Normal" FontFamily="Segoe UI" />
+        </Grid>
+    </Grid>
+    
+        
+    
+</Page>
